@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+    <corners
+        android:radius="30dp"
+        />
+
+    <size
+        android:width="152dp"
+        android:height="202dp"
+        />
+    <stroke
+        android:width="5dp"
+        android:color="@color/select_card_color"
+        />
+</shape>

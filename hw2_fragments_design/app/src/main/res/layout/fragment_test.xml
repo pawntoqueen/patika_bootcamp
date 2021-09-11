@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/word_test"
+    tools:context=".TestFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/test_screen_background"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/card3"
+            app:cardCornerRadius="@dimen/default_radius_of_view"
+            app:cardElevation="@dimen/default_radius_of_view"
+            android:layout_marginBottom="50dp"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/word_card_non_select"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/thinTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ensülin"
+                android:layout_gravity="center"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/card4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:cardCornerRadius="@dimen/default_radius_of_view"
+            app:cardElevation="@dimen/default_radius_of_view"
+            android:layout_marginBottom="50dp"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/word_card_non_select"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/thinTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bağış"
+                android:layout_gravity="center"
+
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            app:cardCornerRadius="@dimen/default_radius_of_view"
+            app:cardElevation="@dimen/default_radius_of_view"
+            app:layout_constraintBottom_toTopOf="@+id/card4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/card3"
+            android:layout_marginBottom="20dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/word_card_non_select" />
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/thinTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altında"
+                android:layout_gravity="center"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            app:cardCornerRadius="@dimen/default_radius_of_view"
+            app:cardElevation="@dimen/default_radius_of_view"
+            app:layout_constraintBottom_toTopOf="@+id/card3"
+            app:layout_constraintEnd_toStartOf="@+id/card2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="20dp"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/word_card_non_select"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/word_card_select" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/thinTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Görselleştirmek"
+                android:textColor="@color/select_card_color"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="@dimen/default_radius_of_view"
+            app:cardElevation="@dimen/default_radius_of_view"
+            app:layout_constraintBottom_toTopOf="@+id/card1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/eng_word"
+                style="@style/thinTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="@dimen/view_margin_medium"
+                android:text="Visualize"
+                android:textSize="@dimen/textsize_xlarge"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/start_now_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            android:layout_marginBottom="30dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
