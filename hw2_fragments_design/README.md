@@ -1,0 +1,1 @@
+# ikinci-hafta-fragment-example-GayeSuner
